@@ -1,7 +1,8 @@
+
 .desktopBody {
-  background: linear-gradient(#1574f0, #4e94f0);
+     background-image: linear-gradient(#1574f0, #4e94f0) ;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 .desktopHead {
   width: 100%;

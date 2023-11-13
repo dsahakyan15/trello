@@ -1,12 +1,12 @@
-import Header from "../../widgets/Header"
-import Card from "../../widgets/Card"
+import Header from "widgets/Header"
+import Card from "widgets/Card"
 import { AiOutlineStar } from 'react-icons/ai'
 import { BsFilter } from 'react-icons/bs'
 import styles from './Desktop.module.css'
 
-const Desktop = () => {
+const Desktop = ({handleSignOut}:any) => {
   return (
-    <div>
+    <div className={styles.desktop}>
       <Header />
       <div className={styles.desktopBody}>
         <div className={styles.desktopHead}>
@@ -17,8 +17,8 @@ const Desktop = () => {
           <div className={styles.toStar}>
             <AiOutlineStar />
           </div>
-          <div className={styles.cardsFilter}>
-            <BsFilter/> <span>Filters</span>
+          <div onClick={handleSignOut} className={styles.cardsFilter}>
+            <BsFilter /> <span>Filters</span>
           </div>
         </div>
         <div className={styles.cards}>

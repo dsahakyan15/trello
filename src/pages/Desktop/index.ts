@@ -1,3 +1,3 @@
-import Desktop from "./Desktop";
+import Desktop from "./ui/Desktop";
 
 export default Desktop
